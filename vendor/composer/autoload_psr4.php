@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Nextras\\Orm\\' => array($vendorDir . '/nextras/orm/src'),
     'Nextras\\Migrations\\' => array($vendorDir . '/nextras/migrations/src'),
     'Nextras\\Dbal\\' => array($vendorDir . '/nextras/dbal/src'),

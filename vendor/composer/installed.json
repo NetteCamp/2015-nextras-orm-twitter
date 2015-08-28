@@ -1354,5 +1354,149 @@
             "BSD-3-Clause"
         ],
         "description": "Database migrations runner"
+    },
+    {
+        "name": "symfony/console",
+        "version": "v2.7.3",
+        "version_normalized": "2.7.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Console.git",
+            "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://192.168.0.101:8080/satis/web/dist/symfony-console-d6cf02fe73634c96677e428f840704bfbcaec29e-zip-d1de49.zip",
+            "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e",
+            "shasum": "9669c3e7dc0145abfe37ea0449e8d6a35ee3589d"
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/event-dispatcher": "~2.1",
+            "symfony/phpunit-bridge": "~2.7",
+            "symfony/process": "~2.1"
+        },
+        "suggest": {
+            "psr/log": "For using the console logger",
+            "symfony/event-dispatcher": "",
+            "symfony/process": ""
+        },
+        "time": "2015-07-28 15:18:12",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Console\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Console Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "kdyby/console",
+        "version": "v2.4.0",
+        "version_normalized": "2.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Kdyby/Console.git",
+            "reference": "55e6549d7c267cbc68f0f793bb4f4f19787c4730"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://192.168.0.101:8080/satis/web/dist/kdyby-console-55e6549d7c267cbc68f0f793bb4f4f19787c4730-zip-f4d8c3.zip",
+            "reference": "55e6549d7c267cbc68f0f793bb4f4f19787c4730",
+            "shasum": "01f310b0d9210cbe0e5a7ac81205a5c0f3799ce5"
+        },
+        "require": {
+            "nette/application": "~2.3@dev",
+            "nette/di": "~2.3@dev",
+            "nette/http": "~2.3@dev",
+            "symfony/console": "~2.5"
+        },
+        "require-dev": {
+            "kdyby/events": "~2.4@dev",
+            "latte/latte": "~2.3@dev",
+            "nette/application": "~2.3@dev",
+            "nette/bootstrap": "~2.3@dev",
+            "nette/caching": "~2.3@dev",
+            "nette/component-model": "~2.2@dev",
+            "nette/database": "~2.3@dev",
+            "nette/deprecated": "~2.3@dev",
+            "nette/di": "~2.3@dev",
+            "nette/finder": "~2.3@dev",
+            "nette/forms": "~2.3@dev",
+            "nette/http": "~2.3@dev",
+            "nette/mail": "~2.3@dev",
+            "nette/neon": "~2.3@dev",
+            "nette/php-generator": "~2.3@dev",
+            "nette/reflection": "~2.3@dev",
+            "nette/robot-loader": "~2.3@dev",
+            "nette/safe-stream": "~2.3@dev",
+            "nette/security": "~2.3@dev",
+            "nette/tester": "~1.3@rc",
+            "nette/tokenizer": "~2.2@dev",
+            "nette/utils": "~2.3@dev",
+            "symfony/event-dispatcher": "~2.4",
+            "tracy/tracy": "~2.3@dev"
+        },
+        "time": "2015-06-14 16:03:10",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Kdyby\\Console\\": "src/"
+            },
+            "classmap": [
+                "src/Kdyby/Console/CliPresenter.php",
+                "src/Kdyby/Console/exceptions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause",
+            "GPL-2.0",
+            "GPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Filip Procházka",
+                "email": "filip@prochazka.su",
+                "homepage": "http://filip-prochazka.com"
+            }
+        ],
+        "description": "Symfony Console integration for Kdyby components",
+        "homepage": "http://kdyby.org",
+        "keywords": [
+            "console",
+            "kdyby",
+            "nette"
+        ]
     }
 ]
