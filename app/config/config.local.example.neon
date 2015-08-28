@@ -1,0 +1,10 @@
+parameters:
+	dbal:
+		driver: mysqli
+		username: root
+		password:
+		dbname: nette_camp_nextras
+		connectionTz: auto-offset
+
+
+nextras.orm:
