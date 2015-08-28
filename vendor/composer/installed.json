@@ -1296,5 +1296,63 @@
             "nextras",
             "orm"
         ]
+    },
+    {
+        "name": "nextras/migrations",
+        "version": "v3.0.1",
+        "version_normalized": "3.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nextras/migrations.git",
+            "reference": "25e5f5847492315069c88abe6765da15d7513e6a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://192.168.0.101:8080/satis/web/dist/nextras-migrations-25e5f5847492315069c88abe6765da15d7513e6a-zip-e81322.zip",
+            "reference": "25e5f5847492315069c88abe6765da15d7513e6a",
+            "shasum": "9167d8e84ab566f9a8196d7d890122758746b46a"
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "require-dev": {
+            "dibi/dibi": "~2.3",
+            "doctrine/dbal": "~2.5",
+            "ext-openssl": "*",
+            "mockery/mockery": "~0.9",
+            "nette/database": "~2.2",
+            "nette/di": "~2.3",
+            "nette/tester": "~1.4",
+            "nette/utils": "~2.3",
+            "nextras/dbal": "@dev",
+            "symfony/console": "~2.6"
+        },
+        "suggest": {
+            "dibi/dibi": "to use DibiAdapter",
+            "nette/database": "to use NetteAdapter",
+            "nextras/dbal": "to use NextrasAdapter"
+        },
+        "time": "2015-07-22 10:33:44",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Nextras\\Migrations\\": "src/"
+            },
+            "classmap": [
+                "src/exceptions.php",
+                "src/deprecated"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Database migrations runner"
     }
 ]
