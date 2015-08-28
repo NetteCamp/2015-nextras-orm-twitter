@@ -1,9 +1,8 @@
 extensions:
 	kdyby.console: Kdyby\Console\DI\ConsoleExtension
+	nextras.dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
 	nextras.orm: Nextras\Orm\Bridges\NetteDI\OrmExtension
-
-
-parameters:
+	nextras.migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
 
 
 php:
@@ -20,8 +19,19 @@ session:
 	expiration: 14 days
 
 
+nextras.dbal: %dbal%
+
+
+nextras.orm:
+	model: App\Model\RepositoryContainer
+
+
+nextras.migrations:
+	dir: %appDir%/../migrations # migrations base directory
+	driver: mysql               # pgsql or mysql
+	dbal: nextras               # nextras, nette, doctrine or dibi
+
+
 services:
-	- App\Model\UserManager
-	- App\Forms\SignFormFactory
 	router: App\RouterFactory::createRouter
 	cache.journal: Nette\Caching\Storages\FileJournal(%tempDir%/journal)
