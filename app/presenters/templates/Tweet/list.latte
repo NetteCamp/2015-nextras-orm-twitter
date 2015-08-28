@@ -1,0 +1,11 @@
+{block content}
+
+	{foreach $tweets as $tweet}
+		<div class="tweet">
+			<strong>{$tweet->user->nick}</strong><br>
+			<p>{$tweet->text}</p>
+			<p>{$tweet->sentAt|date} (age: {$tweet->age})</p>
+		</div>
+	{/foreach}
+
+{/block}
